@@ -61,7 +61,6 @@ jobs:
 
       - name: Git push assets to "release" branch
         run: |
-          rm -rf ./publish/sing-box.zip
           mv ./tmp/sing-box ./publish/sing-box
           cd publish || exit 1
           git init
